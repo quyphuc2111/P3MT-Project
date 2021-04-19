@@ -1,0 +1,41 @@
+.content .container-exam-new {
+    height: 100vh;
+    padding: 20px 10px;
+    min-height: 100vh;
+}
+
+.container-exam-new .link-back-exam a {
+    color: rgba(11, 168, 168, 0.603);
+}
+.input-wrap input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+.form-exam-new input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.input-wrap .error{
+    padding: 5px 0 8px 0;
+    color: #f33a58;
+}
+.container-exam-new .exam-new-body {
+    padding-top: 20px;
+}
+

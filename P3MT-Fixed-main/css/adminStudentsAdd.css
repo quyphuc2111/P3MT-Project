@@ -1,0 +1,82 @@
+.content .container-students-add {
+    height:100%;
+    padding: 20px 10px;
+}
+.container-students-add .link-back-student a {
+    color: rgba(11, 168, 168, 0.603);
+}
+.container-students-add .input-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.container-students-add .input-wrap input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+.input-wrap label {
+    width: 220px;
+    background-color: #0D6EFE;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.input-wrap label:hover {
+    background-color: #0D5ED7;
+}
+.input-wrap .error{
+    padding: 8px 0 8px 0;
+    color: #f33a58;
+}
+.container-students-add input[type=submit] {
+    width: 220px;
+    background-color: #198751;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.container-students-add input[type=submit]:hover {
+    background-color: #157347;
+}
+.container-students-add .student-number {
+    padding-top: 20px;
+    color: red;
+}
+.table table tbody tr td a {
+    width: 70px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    color: #fff;
+}
+.container-students-add table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse:collapse;
+    background-color: #fff;
+}
+table, th, td{
+    border-top:1px solid #ccc;
+}
+th, td{
+    text-align:center;
+    padding:10px;
+}
+tbody tr:hover{
+    background-color: #e0f3ff; 
+}
+td:last-child {
+    display: flex;
+    justify-content: space-around;
+}

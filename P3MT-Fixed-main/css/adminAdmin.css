@@ -1,0 +1,47 @@
+.content .container-admin {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-admin .admin-img-profile {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.admin-img-profile .change-img-profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+.container-admin .admin-img-profile:hover .change-img-profile {
+    display: flex;
+}
+.admin-body {
+    width: 100%;
+}
+.admin-body table {
+    width: 100%;
+}
+tr
+ tr:hover{
+    background-color: #e0f3ff; 
+}

@@ -1,0 +1,130 @@
+.content .container-student-new {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.container-student-new .add-student {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 80px;
+    flex-direction: column;
+    color: #333;
+}
+.container-student-new .add-one-student {
+    border-right: 1px solid #dbdbdb;
+}
+.container-student-new .add-student h1 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+.container-student-new .add-student:hover {
+    background-color: #dbdbdb;
+    color: #fff;
+}
+.container-student-new .icon-back-student-new {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #333;
+}
+.container-student-new .icon-back-student-new i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+ /* student add */
+
+ .student-add {
+    display: none;
+     position: absolute; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     padding-top: 40px; /* Location of the box */
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+  }
+  .student-add .container-student-new  {
+   
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      background: #fefefe;
+     position: relative;
+     margin: auto;
+     width: 40%;
+    min-height: 60vh;
+     border-radius: 15px;
+  }
+ 
+  .student-add .container-student-new h2 {
+      width: 100%;
+     padding-left: 14px;
+      margin: 30px 0 30px 209px;
+     border-left: 5px solid #e91e63;
+  }
+  
+  .student-add .container-student-new .input-wrap {
+     margin-bottom: 25px;
+     position: relative;
+     min-width: 300px;
+     height: 46px;
+  }
+ 
+  .student-add .container-student-new .input-wrap input , .student-add .container-student-new .input-wrap select {
+    
+ position: absolute;
+ left: 0 ;  
+ border: 1px solid black;
+ padding: 10px;
+ border-radius: 5px;
+ background: transparent;
+ 
+ outline: none;
+ font-size: 16px;
+ color: black;
+ font-weight: 400;
+ width: 100%;
+  }
+  .student-add .container-student-new .input-wrap:first-child {
+      margin-top: 15px;
+  }
+  .student-add .container-student-new .input-wrap label {
+      position: absolute;
+      top: -22px;
+      left: 0;
+      font-size: 15px;
+  }
+ 
+  .student-add .container-student-new .input-wrap input[type="submit"] {
+      background: #2196f3;
+      color: white;
+      border: none;
+      max-width: 120px;
+  }
+.student-add .container-student-new #close-btn {
+    position: absolute;
+    right: 18px;
+    top:18px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.student-add .container-student-new #close-btn:hover {
+    color: red;
+}

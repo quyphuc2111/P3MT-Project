@@ -1,0 +1,60 @@
+.content .container-exam {
+    height: 100vh;
+    padding: 20px 10px;
+}
+.container-exam .table-header {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0px;
+}
+.table-header a {
+    margin-left: 15px;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #3ac47d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 30px;
+}
+.table-header a:hover {
+    background-color: #31a66a;
+}
+.table table tbody tr td a {
+    width: 70px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    color: #fff;
+}
+.table table tbody tr td .icon-edit {
+    background-color: #ffc107;
+}
+.table table tbody tr td .icon-delete {
+    background-color: #dc3545;
+}
+table {
+    width: 100%;
+    border-collapse:collapse;
+    background-color: #fff;
+}
+table, th, td{
+    border-top:1px solid #ccc;
+}
+th, td{
+    text-align:center;
+    padding:10px;
+}
+tbody tr:hover{
+    background-color: #e0f3ff; 
+}
+td:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+

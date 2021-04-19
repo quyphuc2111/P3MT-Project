@@ -1,0 +1,148 @@
+
+.content .container-exam {
+    min-height: 100vh;
+   position: relative;
+}
+.container-exam .table-header {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0px;
+}
+.table-header a {
+    margin-left: 15px;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #3ac47d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 30px;
+}
+.table-header a:hover {
+    background-color: #31a66a;
+}
+.table table tbody tr td a {
+    width: 70px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    color: #fff;
+}
+.table table tbody tr td .icon-edit {
+    background-color: #ffc107;
+}
+.table table tbody tr td .icon-delete {
+    background-color: #dc3545;
+}
+table {
+    width: 100%;
+    border-collapse:collapse;
+    background-color: #fff;
+}
+table, th, td{
+    border-top:1px solid #ccc;
+}
+th, td{
+    text-align:center;
+    padding:10px;
+}
+tbody tr:hover{
+    background-color: #e0f3ff; 
+}
+td:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* exam-new */
+
+
+
+ .exam-add {
+    /* display: none; */
+     position: absolute; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+  }
+  .exam-add .container-exam-new  {
+   
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      background: #fefefe;
+     position: relative;
+     margin: auto;
+     width: 40%;
+    min-height: 60vh;
+     border-radius: 15px;
+  }
+ 
+  .exam-add .container-exam-new h2 {
+      width: 100%;
+     padding-left: 14px;
+      margin: 30px 0 30px 209px;
+     border-left: 5px solid #e91e63;
+  }
+  
+  .exam-add .container-exam-new .input-wrap {
+     margin-bottom: 25px;
+     position: relative;
+     min-width: 300px;
+     height: 46px;
+  }
+ 
+  .exam-add .container-exam-new .input-wrap input , .exam-add .container-exam-new .input-wrap select {
+    
+ position: absolute;
+ left: 0 ;  
+ border: 1px solid black;
+ padding: 10px;
+ border-radius: 5px;
+ background: transparent;
+ 
+ outline: none;
+ font-size: 16px;
+ color: black;
+ font-weight: 400;
+ width: 100%;
+  }
+  .exam-add .container-exam-new .input-wrap:first-child {
+      margin-top: 15px;
+  }
+  .exam-add .container-exam-new .input-wrap label {
+      position: absolute;
+      top: -22px;
+      left: 0;
+      font-size: 15px;
+  }
+ 
+  .exam-add .container-exam-new .input-wrap input[type="submit"] {
+      background: #2196f3;
+      color: white;
+      border: none;
+      max-width: 120px;
+  }
+.exam-add .container-exam-new #close-btn {
+    position: absolute;
+    right: 18px;
+    top:18px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.exam-add .container-exam-new #close-btn:hover {
+    color: red;
+}

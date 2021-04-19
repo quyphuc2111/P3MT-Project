@@ -1,0 +1,28 @@
+.container-chart {
+    padding: 20px 30px;
+}
+.container-chart .chart-item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.container-chart h3 {
+   text-align: center;
+   padding-top: 10px;
+}
+.chart-line canvas {
+    width: 100%;
+    padding: 10px;
+}
+.container-chart .chartPie-chartArea {
+    display: flex;
+    justify-content: space-between;
+}
+.chartPie-chartArea .chartPie {
+    width: 40%;
+}
+.chartPie-chartArea .chartArea {
+    width: 40%;
+}
