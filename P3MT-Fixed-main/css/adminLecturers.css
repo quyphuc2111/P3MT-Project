@@ -1,0 +1,676 @@
+.content .container-lecturers {
+    min-height: 100vh;
+    padding: 20px 10px;
+    position: relative;
+}
+.container-lecturers .table-header {
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.container-lecturers .table-header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.container-lecturers .table-header-content  input {
+    width: 80%;
+    padding: 8px 10px;
+    cursor: pointer;
+    height: 70%;
+}
+.container-lecturers .table-header-content .icon-new {
+    width: 200px;
+    cursor: pointer;
+    background-color: #3ac47d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    height: 70%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-lecturers .table-header-content .icon-new  i {
+    margin-left: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+  .modal-content {
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width:60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal .modal-content-new {
+    width: 60%;
+}
+
+.modal-body-new {
+    display: flex;
+    height: 300px;
+}
+.modal-body-new  .add-lecturers {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 80px;
+}
+.modal-body-new .add-one-lecturers {
+    color: #0d6efd;
+}
+.modal-body-new .add-lecturerss {
+    color: #198754;
+}
+
+.modal-body-new .add-one-lecturers {
+    border-right: 1px solid #dbdbdb;
+}
+.modal-body-new  .add-lecturers:hover {
+    background-color: #dbdbdb;
+    color: #333;
+}
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+
+  .modal-header {
+    padding: 10px 0; 
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
+.modal-header-new {
+    padding: 10px 0; 
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+
+
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 18px;
+}
+  .container-lecturers .modal-btn {
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+  }
+  .container-lecturers .modal-btn-yes {
+    background-color: #4CAF50;
+  }
+  .container-lecturers .modal-btn-yes:hover {
+    background-color: #45a049;
+  }
+  .container-lecturers .modal-btn-no {
+    background-color: #dc3545;
+  }
+  .container-lecturers .modal-btn-no:hover {
+    background-color:#bb2d3b;
+  }
+  
+ /* modal-create-lecturers */
+ .modal .modal-content-create-lecturers {
+    width: 60%;
+    padding: 20px;
+}
+.modal-header-create-lecturers h2 {
+    border-left: 5px solid #e91e63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal .modal-body-create-lecturers {
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-lecturers .modal-body-create-lecturers .input-wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container-lecturers .modal-body-create-lecturers .input-wrap input,.container-lecturers .modal-body-create-lecturers .input-wrap select  {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+
+.container-lecturers .modal-content .modal-body-content {
+    padding: 10px;
+    
+}
+.container-lecturers .modal-content .modal-body .title {
+    background: rgb(149 165 166);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container-lecturers #myModal-delete-lecturers .modal-content .modal-body .title , .container-lecturers #myModal-delete-lecturers .modal-content .modal-body .info {
+    display: flex;
+    
+  
+}
+.container-lecturers .modal-content .modal-body .title div , .container-lecturers .modal-content .modal-body .info div {
+  flex: 1;
+    text-align: center;
+   height: 35px;
+   line-height: 35px;
+}
+
+/* modal-edit-lecturers */
+.modal .modal-content-edit-lecturers {
+    width: 60%;
+    padding: 20px;
+}
+.modal-header-edit-lecturers h2 {
+    border-left: 5px solid #e91e63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal .modal-body-edit-lecturers {
+    display: flex;
+    flex-direction: column; 
+}
+.container-lecturers .modal-body-edit-lecturers .input-wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container-lecturers .modal-body-edit-lecturers .input-wrap input,.container-lecturers .modal-body-edit-lecturers .input-wrap select  {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+/* modal-profile-lecturers */
+.modal .modal-content-profile-lecturers {
+    width: 60%;
+    padding: 20px;
+}
+.modal-header-profile-lecturers h2 {
+    border-left: 5px solid #e91e63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal .modal-body-profile-lecturers {
+    display: flex;
+    
+    
+}
+.container-lecturers .modal-body-profile-lecturers .input-wrap {
+    display: flex;
+   
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.modal-body-profile-lecturers .input-wrap:nth-child(1) {
+    font-weight: 600;
+    flex:2;
+    
+}
+.modal-body-profile-lecturers .input-wrap:nth-child(2) {  
+    flex:3;
+}
+.modal .modal-body-profile-lecturers .input-wrap ul {
+    list-style: none;
+}
+
+.modal .modal-body-profile-lecturers .input-wrap ul  li {
+ 
+    padding: 12px;
+}
+.modal .modal-body-profile-lecturers .input-wrap ul .input-group {
+    display: flex;
+    align-items: center;
+}
+.modal-content-profile-lecturers .input-group input {
+    padding: 5px 15px;
+    border-radius: 3px;
+    width: 50%;
+    
+    margin-right: 10px;
+    margin-left: 5px;
+    outline: none;
+    
+}
+
+.modal-body-profile-lecturers .input-wrap:nth-child(2) li:nth-child(9) {
+    padding: 6px;
+}
+.modal-content-profile-lecturers .input-group button {
+    width: 35px;
+    height: 35px;
+}
+.modal-footer-profile-lecturers {
+    text-align: center;
+    font-size: 2.225rem;
+    color: red;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.container-lecturers .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 18px;
+
+}
+
+/* table footer and talbe end */
+.container-lecturers .table-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+}
+.container-lecturers .table-end {
+    background-color: #fff;
+    height: 3.5rem;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #dbdbdb;
+}   
+.container-lecturers .pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-lecturers .pagination ul {
+    display: flex;
+    background-color: #fff;
+    padding: 8px ;
+    border-radius: 50px;
+    width: 50%;
+    justify-content: center;
+}
+.container-lecturers .pagination ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 35px;
+}
+.container-lecturers .pagination ul li:first-child {
+    flex: 1;
+    text-align: start;
+}
+.container-lecturers .pagination ul li:last-child {
+    flex: 1;
+    text-align: end;
+    
+}
+.container-lecturers .pagination ul li .btn {
+    padding: 0 25px;
+    background: #20b2aa;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.container-lecturers .pagination ul li .btn-prev {
+    border-radius: 25px 5px 5px 25px;
+}
+.container-lecturers .pagination ul li .btn-prev i {
+    padding-right: 10px;
+}
+.container-lecturers .pagination ul li .btn-next {
+    border-radius: 5px 25px 25px 5px;
+}
+.container-lecturers .pagination ul li .btn-next i {
+    padding-left: 10px;
+}
+.container-lecturers .pagination ul li .btn:hover {
+    background: #169791;
+}
+.container-lecturers .findPage  {
+    margin: 20px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.container-lecturers .boxGoToPage {
+    display: flex;
+}
+.container-lecturers .findPage input {
+    flex: 1;
+    padding: 8px 20px;
+    border-radius: 25px 5px 5px 25px;
+    outline: none;
+    border: 1px solid #333;
+}
+.container-lecturers .findPage button {
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #479f76;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+   
+}
+.container-lecturers .findPage button:hover {
+    background: #146c43;
+}
+.container-lecturers .errorGoToPage 
+{
+    padding-top: 3px;
+    color: red
+}
+
+
+/* Layout table*/
+
+.container-lecturers .table-content  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: #fff;
+
+}
+
+.container-lecturers .table-content .lecturers-title ul{
+    font-weight: 600;
+}
+
+.container-lecturers .table-content .lecturers-title ul,.container-lecturers .table-content .lecturers-content ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+.container-lecturers .table-content .lecturers-title ul li,.container-lecturers .table-content .lecturers-content ul li {
+    display: flex;
+    flex: 1;
+   
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.container-lecturers .table-content .lecturers-title ul li:nth-child(7),  .container-lecturers .table-content .lecturers-content ul li:nth-child(7),
+.container-lecturers .table-content .lecturers-title ul li:nth-child(2),  .container-lecturers .table-content .lecturers-content ul li:nth-child(2) {
+    flex: 1.5;
+}
+
+.container-lecturers .lecturers-content ul li {
+    border-top: 1px solid rgb(223, 217, 217);
+  
+}
+.container-lecturers .lecturers-content ul li a {
+    width: 22%;
+
+    text-align: center;
+    margin: 5px;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+}
+.container-lecturers .lecturers-content .icon-delete {
+    background-color: rgb(243, 42, 42);
+    
+}
+.container-lecturers .lecturers-content .icon-edit {
+    background-color:rgb(33, 167, 33);
+}
+.container-lecturers .lecturers-content .icon-profile {
+    background-color: #333;
+}
+/* tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+   /* header .nav-item {
+       display: none;
+   } */
+   header .logout_btn {
+       margin-right: 63px;
+   }
+   /* sidebar */
+   .sidebar {
+       height: 100%;
+       width: 100%;
+       z-index: 1;
+        display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       padding: 0;
+       display: none;
+   }
+   .sidebar a {
+       width: fit-content;
+       padding-left: 0;
+       line-height: 0;
+       font-size: 1.7rem;
+        margin-top: 23px;
+   }
+   .sidebar a:last-child {
+    margin-top: 70px;
+}
+   .sidebar .profile_image {
+       display: none;
+       
+   }
+
+   /* content */
+   .content {
+       margin-left: 0;
+   }
+   .container-lecturers .table-header-content .icon-new {
+       width: 110px;
+   }
+   .container-lecturers .lecturers-content ul li a {
+        padding: 0;
+        width: 20%;
+   }
+   .container-lecturers .lecturers-content ul li a i {
+       padding: 5px;
+   }
+   .container-lecturers .table-content .lecturers-title ul li, .container-lecturers .table-content .lecturers-content ul li {
+       font-size: 0.82rem;
+   }
+   .container-lecturers .table-content .lecturers-title ul li:nth-child(2), .container-lecturers .table-content .lecturers-content ul li:nth-child(2),
+   .container-lecturers .table-content .lecturers-title ul li:nth-child(5), .container-lecturers .table-content .lecturers-content ul li:nth-child(5)  {
+       flex: 1.2;
+   } 
+   .container-lecturers .table-content .lecturers-title ul li:nth-child(4), .container-lecturers .table-content .lecturers-content ul li:nth-child(4) {
+       flex:0.8;
+   } 
+   
+/* modal */
+
+.modal .modal-content-profile-lecturers,  .modal .modal-content-edit-lecturers,  #myModal-delete-lecturers .modal-content{
+    width: 76%;
+    height: auto;
+}
+#myModal-delete-lecturers .modal-content .modal-footer {
+    margin-top: 50px;
+}
+
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 46.1875em) {
+    header .nav-header {
+        width: 130px;
+    }
+    header .nav-item {
+        display: none;
+    }
+    header .logout_btn {
+        margin-right: 31px;
+    }
+    /* sidebar */
+    .sidebar {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        max-height: 100%;
+        display: none;
+      
+       
+    }
+    .sidebar a {
+        width: fit-content;
+        padding-left: 0;
+        line-height: 0;
+        font-size: 1.1rem;
+         margin-top: 13px;
+        
+    }
+    .sidebar a:last-child {
+     margin-top:37px;
+     height: auto;
+     padding: 10px;
+ }
+    .sidebar .profile_image {
+        display: none;
+        
+    }
+      /* content */
+   .content {
+    margin-left: 0;
+}
+.container-lecturers .table-header-content input {
+    display: none;
+}
+.container-lecturers .table-header-content .icon-new {
+    width: 120px;
+    height: 52%;
+}
+.container-lecturers .lecturers-content ul li a {
+     padding: 0;
+     width: 25%;
+     margin: 3px;
+}
+.container-lecturers .lecturers-content ul li a i {
+    padding: 3px 6px;
+}
+.container-lecturers .table-content .lecturers-title ul li, .container-lecturers .table-content .lecturers-content ul li {
+    font-size: 0.62rem;
+}
+.container-lecturers .table-content .lecturers-title ul li:nth-child(3), .container-lecturers .table-content .lecturers-content ul li:nth-child(3),
+.container-lecturers .table-content .lecturers-title ul li:nth-child(4), .container-lecturers .table-content .lecturers-content ul li:nth-child(4)  {
+    display: none;
+} 
+.container-lecturers .table-content .lecturers-title ul li:nth-child(7),  .container-lecturers .table-content .lecturers-content ul li:nth-child(7) {
+   flex: 2;
+}
+.container-lecturers .findPage {
+    display: none;
+}
+.container-lecturers .pagination ul li .btn {
+    height: 20px;
+    padding: 0 5px;
+}
+/* modal */
+
+.modal .modal-content-profile-lecturers,  .modal .modal-content-edit-lecturers,  #myModal-delete-lecturers .modal-content{
+    width: 90%;
+    height: auto;
+    
+}
+.modal .modal-content-profile-lecturers{
+    font-size: 0.5rem;
+    padding: 10px;
+}
+.modal .modal-body-profile-lecturers .input-wrap ul li {
+    padding: 6px;
+}
+/* .modal-body-profile-lecturers .input-wrap:nth-child(1) {
+    flex: 1;
+} */
+.modal .modal-body-profile-lecturers .input-wrap ul li {
+    font-size: 0.7rem;
+}
+.modal-content-profile-lecturers .input-group input {
+    padding: 0;
+}
+.modal-body-profile-lecturers .input-wrap:nth-child(2) li:nth-child(9) {
+    padding: 2px;
+}
+
+.modal .modal-content-edit-lecturers {
+    font-size: 0.8rem;
+}
+.container-lecturers .modal-body-edit-lecturers .input-wrap input, .container-lecturers .modal-body-edit-lecturers .input-wrap select {
+    padding: 8px;
+}
+.container-lecturers .modal-btn{
+    width: 121px;
+}
+}

@@ -1,0 +1,432 @@
+.content .container-subjects {
+    min-height: 100vh;
+    padding: 20px 10px;
+    position: relative;
+}
+.container-subjects .table-header {
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.container-subjects .table-header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.container-subjects .table-header-content  input {
+    width: 80%;
+    padding: 8px 10px;
+    cursor: pointer;
+    height: 70%;
+}
+.container-subjects .table-header-content .icon-new {
+    width: 200px;
+    cursor: pointer;
+    background-color: #3ac47d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    height: 70%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-subjects .table-header-content .icon-new  i {
+    margin-left: 10px;
+}
+.container-subjects .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-subjects .input-group input {
+    padding: 4px 5px;
+    height: 27px;
+}
+
+.container-subjects table tbody tr td button {
+    width: 70px;
+    height: 32px;
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.container-subjects table tbody tr td .icon-edit {
+    background-color: #ffc107;
+}
+.container-subjects table tbody tr td .icon-delete {
+    background-color: #dc3545;
+}
+.container-subjects table {
+    width: 100%;
+    border-collapse:collapse;
+    background-color: #fff;
+}
+.container-subjects table, th, td{
+    border-top:1px solid #ccc;
+}
+
+.container-subjects th, td{
+    text-align:center;
+    padding: 8px;
+}
+
+tbody tr:hover{
+    background-color: #e0f3ff; 
+}
+td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-subjects .table-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+}
+.container-subjects .table-end {
+    background-color: #fff;
+    height: 3.5rem;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+  .modal-content {
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width:60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal .modal-content-new {
+    width: 60%;
+}
+
+.modal-body-new {
+    display: flex;
+    height: 300px;
+}
+.modal-body-new  .add-subjects {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 80px;
+}
+.modal-body-new .add-one-subjects {
+    color: #0d6efd;
+}
+.modal-body-new .add-subjectss {
+    color: #198754;
+}
+
+.modal-body-new .add-one-subjects {
+    border-right: 1px solid #dbdbdb;
+}
+.modal-body-new  .add-subjects:hover {
+    background-color: #dbdbdb;
+    color: #333;
+}
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+
+  .modal-header {
+    padding: 10px 0; 
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+
+}
+.modal-header-new {
+    padding: 10px 0; 
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+
+
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 18px;
+}
+  .container-subjects .modal-btn {
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+  }
+  .container-subjects .modal-btn-yes {
+    background-color: #4CAF50;
+  }
+  .container-subjects .modal-btn-yes:hover {
+    background-color: #45a049;
+  }
+  .container-subjects .modal-btn-no {
+    background-color: #dc3545;
+  }
+  .container-subjects .modal-btn-no:hover {
+    background-color:#bb2d3b;
+  }
+  
+ /* modal-create-subjects */
+ .modal .modal-content-create-subjects {
+    width: 60%;
+    padding: 20px;
+}
+.modal-header-create-subjects h2 {
+    border-left: 5px solid #e91e63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal .modal-body-create-subjects {
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-subjects .modal-body-create-subjects .input-wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container-subjects .modal-body-create-subjects .input-wrap input,.container-subjects .modal-body-create-subjects .input-wrap select  {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+
+.container-subjects .modal-content .modal-body-content {
+    padding: 10px;
+    
+}
+.container-subjects .modal-content .modal-body .title {
+    background: rgb(149 165 166);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container-subjects #myModal-delete-subjects .modal-content .modal-body .title , .container-subjects #myModal-delete-subjects .modal-content .modal-body .info {
+    display: flex;
+    
+  
+}
+.container-subjects .modal-content .modal-body .title div , .container-subjects .modal-content .modal-body .info div {
+  flex: 1;
+    text-align: center;
+   height: 35px;
+   line-height: 35px;
+}
+
+/* modal-edit-subjects */
+.modal .modal-content-edit-subjects {
+    width: 60%;
+    padding: 20px;
+}
+.modal-header-edit-subjects h2 {
+    border-left: 5px solid #e91e63;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+.modal .modal-body-edit-subjects {
+    display: flex;
+    flex-direction: column; 
+}
+.container-subjects .modal-body-edit-subjects .input-wrap {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container-subjects .modal-body-edit-subjects .input-wrap input,.container-subjects .modal-body-edit-subjects .input-wrap select  {
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+
+
+.container-subjects .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 18px;
+}
+
+
+.container-subjects  .icon-delete{
+    background-color: rgb(243, 42, 42);
+    
+}
+.container-subjects  .icon-edit  {
+    background-color:rgb(33, 167, 33);
+}
+
+
+/* table footer and talbe end */
+.container-subjects .table-footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    right: 0;
+}
+.container-subjects .table-end {
+    background-color: #fff;
+    height: 3.5rem;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #dbdbdb;
+}   
+.container-subjects .pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-subjects .pagination ul {
+    display: flex;
+    background-color: #fff;
+    padding: 8px ;
+    border-radius: 50px;
+    width: 50%;
+    justify-content: center;
+}
+.container-subjects .pagination ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 35px;
+}
+.container-subjects .pagination ul li:first-child {
+    flex: 1;
+    text-align: start;
+}
+.container-subjects .pagination ul li:last-child {
+    flex: 1;
+    text-align: end;
+    
+}
+.container-subjects .pagination ul li .btn {
+    padding: 0 25px;
+    background: #20b2aa;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.container-subjects .pagination ul li .btn-prev {
+    border-radius: 25px 5px 5px 25px;
+}
+.container-subjects .pagination ul li .btn-prev i {
+    padding-right: 10px;
+}
+.container-subjects .pagination ul li .btn-next {
+    border-radius: 5px 25px 25px 5px;
+}
+.container-subjects .pagination ul li .btn-next i {
+    padding-left: 10px;
+}
+.container-subjects .pagination ul li .btn:hover {
+    background: #169791;
+}
+.container-subjects .findPage  {
+    margin: 20px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.container-subjects .boxGoToPage {
+    display: flex;
+}
+.container-subjects .findPage input {
+    flex: 1;
+    padding: 8px 20px;
+    border-radius: 25px 5px 5px 25px;
+    outline: none;
+    border: 1px solid #333;
+}
+.container-subjects .findPage button {
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #479f76;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+   
+}
+.container-subjects .findPage button:hover {
+    background: #146c43;
+}
+.container-subjects .errorGoToPage 
+{
+    padding-top: 3px;
+    color: red
+}

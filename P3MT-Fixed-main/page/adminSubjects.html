@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Subjects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminSubjects.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="../public/dist/pagination.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-header">
+                <div class="left_area">
+                    <h3>PM3T</h3>
+                </div>
+                <div class="icon-bar">
+                    <i class="fas fa-bars navbar-btn" id="sidebar_btn"></i>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="icon-envelope">
+                    <i class="far fa-envelope navbar-btn">
+                        <span class="notification">3</span>
+                    </i>
+                </div>
+                <div class="icon-bell">
+                    <i class="far fa-bell navbar-btn">
+                        <span class="notification-action">5</span>
+                    </i>
+                </div>
+            </div>
+            <div class="right_area">
+                <a href="" class="logout_btn">Logout</a>
+            </div>
+        </header>
+        <!-- sidebar start -->
+        <div class="sidebar">
+            <div class="profile_image">
+                <img src="../img/1.jpg" alt="">
+                <h4>Nguyễn long nhật</h4>
+            </div>
+            <a href=""><i class="fas fa-home"></i><span>Dashboard</span></a>
+            <a href=""><i class="far fa-chart-bar"></i><span>Thống kê báo cáo</span></a>
+            <a href=""><i class="far fa-bell"></i><span>Kỳ thi</span></a>
+            <a href=""><i class="fas fa-graduation-cap"></i><span>Khối</span></a>
+            <a href=""><i class="fas fa-book"></i><span>Môn học</span></a>
+            <a href=""><i class="far fa-address-card"></i><span>Giảng viên</span></a>
+            <a href=""><i class="fas fa-building"></i><span>Lớp học</span></a>
+            <a href=""><i class="fas fa-user-graduate"></i><span>Học sinh</span></a>
+            <a href=""><i class="fas fa-school"></i></i><span>Phòng thi</span></a>
+            <a href=""><i class="far fa-sticky-note"></i></i><span>Đề</span></a>
+            <a href=""><i class="fas fa-question"></i><span>Câu hỏi</span></a>
+            <a href=""><i class="fab fa-leanpub"></i><span>Đáp án</span></a>
+            <a href=""><i class="fas fa-book-open"></i><span>Bài thi</span></a>
+            <a href=""><i class="fas fa-poll-h"></i></i><span>Kết quả</span></a>
+            <a href=""><i class="fas fa-exclamation-triangle"></i><span>Báo lỗi</span></a>
+            <a href=""><i class="fas fa-users-cog"></i><span>Admin</span></a>
+            <a href=""></i><span>Logout</span><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+        <!-- sidebar end -->
+        <div class="content">
+            <div class="container-subjects">
+                <!-- The Modal -->
+                <div id="myModal-delete-subjects" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Bạn chắc là muốn xóa?</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body-content">
+                                <div class="title">
+                                    <div>Mã môn học</div>
+                                    <div>Tên môn học</div>
+
+                                </div>
+
+                                <div class="info">
+                                    <div>HS001</div>
+                                    <div>Họa hình</div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="modal-btn modal-btn-yes">Đồng ý</button>
+                            <button class="modal-btn modal-btn-no">Hủy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal-create-subjects -->
+                <div id="myModal-create-subjects" class="modal">
+                    <div class="modal-content modal-content-create-subjects">
+                        <div class="modal-header-create-subjects">
+                            <h2>Create subjects</h2>
+                        </div>
+
+                        <div class="modal-body-create-subjects">
+                            <div class="input-wrap">
+                                <label for="mamonhoc">Mã môn học</label>
+                                <input type="text" id="mamonhoc" name="mamonhoc" ">
+                                <div class=" error">
+                            </div>
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="tenmonhoc">Tên môn học</label>
+                            <input type="text" id="tenmonhoc" name="tenmonhoc">
+                            <div class="error"></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="modal-footer-create-subjects">
+                        <button class="modal-btn modal-btn-yes">Tạo mới</button>
+                        <button class="modal-btn modal-btn-no">Hủy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal-edit-subjects-->
+
+            <div id="myModal-edit-subjects" class="modal">
+                <div class="modal-content modal-content-edit-subjects">
+                    <div class="modal-header-edit-subjects">
+                        <h2>Sửa thông tin môn học</h2>
+                    </div>
+                    <div class="modal-body-edit-subjects">
+                        <div class="input-wrap">
+                            <label for="mahocsinh">Mã môn học</label>
+                            <input type="text" id="mahocsinh" name="mahocsinh" value="HS003" disabled>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="tenhocsinh">Tên môn học</label>
+                            <input type="text" id="tenhocsinh" name="tenhocsinh" value="Nguyễn Long Nhật">
+                            <div class="error"></div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer-edit-subjects">
+                        <button class="modal-btn modal-btn-yes">Sửa</button>
+                        <button class="modal-btn modal-btn-no">Hủy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-header">
+                <div class="table-header-content">
+
+                    <input id="input-search" type="text" placeholder="Tìm kiếm">
+                    <a class="icon-new">Creat New <i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã môn học</th>
+                            <th>Tên môn học</th>
+                            <th>Thao tác</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HS001</td>
+                            <td>Hình họa</td>
+                            <td>
+                                <button class="icon-edit" onclick="return false">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="icon-delete" onclick="return false">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-end"></div>
+            <div class="table-footer">
+                <div class="pagination">
+                    <ul>
+                        <li><button class="btn btn-prev"><i class="fas fa-angle-left"></i>Prev</button></li>
+                        <li class="pagePagination"><span class="currentPage">1</span>/<span class="totalPage">5</span>
+                        </li>
+                        <li><button class="btn btn-next">Next<i class="fas fa-angle-right"></i></button></li>
+                    </ul>
+                    <div class="findPage">
+                        <div class="boxGoToPage">
+                            <input type="number" placeholder="Nhập trang bạn muốn tới">
+                            <div class="findPageButton">
+                                <button class="searchPage">Go</button>
+                            </div>
+                        </div>
+                        <div class="errorGoToPage"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/admin.js"></script>
+    <script src="../js/adminSubjects.js"></script>
+    <script src="../public/dist/pagination.min.js"></script>
+
+
+</body>
+
+</html>
